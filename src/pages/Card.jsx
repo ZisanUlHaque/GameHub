@@ -1,8 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+import { Link } from "react-router";
 
 const Card = ({ data }) => {
-  const { title, coverPhoto } = data;
+  const { title, coverPhoto, description, developer, ratings,id } = data;
 
   return (
     <motion.div
@@ -14,14 +16,30 @@ const Card = ({ data }) => {
       transition={{ duration: 0.4 }}
     >
       <figure>
-        <img src={coverPhoto} alt={title} className='w-full h-[430px] object-cover' />
+        <img
+          src={coverPhoto}
+          alt={title}
+          className="w-full h-[430px] object-cover"
+        />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+        <div className="flex items-center justify-between">
+          <h2 className="card-title font-bold">{title}</h2>
+          <div className="flex gap-2 items-center bg-amber-400 px-2 py-1 rounded-xl">
+            <Star></Star>
+            {ratings}
+          </div>
+        </div>
+        <p>{description}</p>
+        <div className="card-actions justify-between items-center">
+          <div className="font-medium text-red-700">
+            Developed by: {developer}
+          </div>
+          <Link to={`/details/${id}`}>
+              <div className="text-blue-700 underline font-semibold">
+              Details
+              </div>
+          </Link>
         </div>
       </div>
     </motion.div>

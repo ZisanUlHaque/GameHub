@@ -62,8 +62,8 @@ const Navbar = () => {
         <ul className="flex gap-4 font-medium text-white">{Links}</ul>
       </div>
       <div className="navbar-end gap-1 lg:gap-3">
-        <button className="btn btn-outline btn-success">Login</button>
-        <button className="btn btn-outline btn-primary">Register</button>
+        <Link to='/auth/login'><button className="btn btn-outline btn-success">Login</button></Link>
+        <Link to='/auth/register'> <button className="btn btn-outline btn-primary">Register</button></Link>
       </div>
     </div>
   );

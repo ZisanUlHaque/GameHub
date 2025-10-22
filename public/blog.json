@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "title": "Top 10 Battle Royale Games You Must Try in 2025",
+    "coverPhoto": "https://i.ibb.co.com/qPRMw8W/codm-ff-pubg-apex-fortnite-900x600.webp",
+    "author": "Alex Carter",
+    "date": "2025-10-15",
+    "category": "Battle Royale",
+    "description": "Discover the most intense and strategic battle royale games dominating 2025, from PUBG to Fortnite — and what makes them stand out."
+  },
+  {
+    "id": "2",
+    "title": "How Indie Developers Are Changing the Gaming Industry",
+    "coverPhoto": "https://i.ibb.co.com/Jjd0QymY/Whisk-7a335a1dbeed14d814a43259a27d4fe5dr.jpg",
+    "author": "Maya Lee",
+    "date": "2025-10-10",
+    "category": "Indie Games",
+    "description": "Indie developers are redefining creativity and storytelling in gaming. Here’s how small studios are creating massive impact worldwide."
+  },
+  {
+    "id": "3",
+    "title": "Zero3Quest’s Ultimate Guide to FPS Domination",
+    "coverPhoto": "https://i.ibb.co.com/Gg1dTS3/battlefield-6-key-art-1.webp",
+    "author": "Chris Nolan",
+    "date": "2025-09-25",
+    "category": "FPS",
+    "description": "Level up your aim, strategy, and team coordination with Zero3Quest’s expert FPS gameplay guide — perfect for both rookies and pros."
+  },
+  {
+    "id": "4",
+    "title": "Exploring the Future of VR Gaming",
+    "coverPhoto": "https://i.ibb.co.com/d4tDDnxy/1712771234228.png",
+    "author": "Sarah Kim",
+    "date": "2025-09-18",
+    "category": "VR",
+    "description": "Virtual reality is taking immersion to new heights. We dive deep into how VR is transforming the way we play and experience games."
+  },
+  {
+    "id": "5",
+    "title": "Zero3Quest Reviews: Top Rated Games of the Month",
+    "coverPhoto": "https://i.ibb.co.com/zWhDvZnh/gorn2launchtrailer-ign-blogroll-1744903843005.jpg",
+    "author": "Jordan Miles",
+    "date": "2025-10-05",
+    "category": "Reviews",
+    "description": "Check out our handpicked top-rated games this month — reviewed, tested, and ranked by the Zero3Quest editorial team."
+  },
+  {
+    "id": "6",
+    "title": "Building a Pro Gaming Setup on a Budget",
+    "coverPhoto": "https://i.ibb.co.com/RGYCGCFn/ella-don-RHum9wpeeno-unsplash.webp",
+    "author": "Riya Das",
+    "date": "2025-09-12",
+    "category": "Hardware",
+    "description": "Want a pro-level setup without breaking the bank? We guide you through building the ultimate gaming rig under budget."
+  },
+  {
+    "id": "7",
+    "title": "The Rise of Esports in South Asia",
+    "coverPhoto": "https://i.ibb.co.com/xKTw3DLf/ESports-image-florian-olivo-Mf23-RF8x-Ar-Y-unsplash.jpg",
+    "author": "Ayan Rahman",
+    "date": "2025-10-01",
+    "category": "Esports",
+    "description": "From Bangladesh to India, Esports is booming. Discover how young gamers are turning passion into professional success."
+  },
+  {
+    "id": "8",
+    "title": "5 Hidden Gem Games You Shouldn’t Miss",
+    "coverPhoto": "https://i.ibb.co.com/fGXn4XZq/za-U27ja-Us-Abs-N6-Xqu-PK5-Ho-970-80-jpg.webp",
+    "author": "Emma Torres",
+    "date": "2025-09-28",
+    "category": "Discoveries",
+    "description": "Explore underrated games that deserve your attention — creative, fun, and often more exciting than mainstream titles."
+  },
+  {
+    "id": "9",
+    "title": "Zero3Quest’s Behind the Scenes: Building the Ultimate Game Hub",
+    "coverPhoto": "https://i.ibb.co.com/nMkf8BgC/Horizon-Zero-Dawn-Remastered-2-1536x864.jpg",
+    "author": "Zero3Quest Team",
+    "date": "2025-10-20",
+    "category": "Development",
+    "description": "Take a sneak peek behind the curtain — how the Zero3Quest team built a next-gen gaming hub from scratch."
+  }
+]

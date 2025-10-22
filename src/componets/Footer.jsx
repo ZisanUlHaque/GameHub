@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex justify-between items-center bg-[#001931] px-2 py-5">
           <div className="flex items-center">
             <img src={logo} alt="" className="w-10 h-10"/>
-            <h3 className="ml-2 text-2xl font-semibold text-[#632EE3]">ZeroThree</h3>
+            <h3 className="ml-2 text-2xl font-semibold text-[#632EE3]">Zero3Quest</h3>
           </div>
             <div>
                 <h2 className="text-white font-semibold">Social Links</h2>
