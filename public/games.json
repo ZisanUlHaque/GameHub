@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "PlayerUnknown's Battlegrounds: PUBG",
+    "coverPhoto": "https://i.ibb.co.com/Pz6G7TY9/f9aaaed50daca209a9196fd7ab341f4c.jpg",
+    "category": "Battle Royale / FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://i.ibb.co.com/GfbZgpK0/27104eefdb8b681d17f7ad5cda235892.jpg",
+    "category": "FPS / Battle Royale",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty: Mobile delivers iconic multiplayer and battle royale experiences with console-quality gameplay on mobile.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Free Fire",
+    "coverPhoto": "https://i.ibb.co.com/C3krqzd9/483528c77a19be6735661c5f68a749ea.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com/",
+    "description": "Free Fire is a quick survival shooter game where players compete in 10-minute rounds on a remote island.",
+    "ratings": "4.3",
+    "developer": "Garena"
+  },
+  {
+    "id": "4",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i.ibb.co.com/4gRdQJLv/ddd67a00297de983b9c275294f4e66b6.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "Genshin Impact is an open-world action RPG where players explore the magical world of Teyvat and control multiple characters with unique powers.",
+    "ratings": "4.7",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "5",
+    "title": "Valorant",
+    "coverPhoto": "https://i.ibb.co.com/ym986B3x/7bf61b8b77e394c4bc709f6b02c0db24.jpg",
+    "category": "Tactical FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant combines precise gunplay and unique agent abilities in a 5v5 tactical shooter setting.",
+    "ratings": "4.8",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "6",
+    "title": "Apex Legends",
+    "coverPhoto": "https://i.ibb.co.com/spFzRgHG/1f00f16f065cf7032902981192cf8c98.jpg",
+    "category": "Battle Royale / FPS",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Apex Legends is a team-based battle royale game set in the Titanfall universe, known for fast-paced movement and unique heroes.",
+    "ratings": "4.5",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "7",
+    "title": "Fortnite",
+    "coverPhoto": "https://i.ibb.co.com/SD4qfDD4/7ee8c4361736ed806711ae99f7d6762c.jpg",
+    "category": "Battle Royale / Sandbox",
+    "downloadLink": "https://www.epicgames.com/fortnite/",
+    "description": "Fortnite blends survival, exploration, and creative gameplay in a constantly evolving world full of events and challenges.",
+    "ratings": "4.4",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "8",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://i.ibb.co.com/snGqh0r/dd13e767ec40dbb2052fb3e651c902a4.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "Clash of Clans is a strategy game where players build villages, train troops, and wage wars against other players worldwide.",
+    "ratings": "4.6",
+    "developer": "Supercell"
+  },
+  {
+    "id": "9",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.ibb.co.com/p6vRWnzH/5ff0e997a4a8ba449056ed679660f4cc.jpg",
+    "category": "Sandbox / Adventure",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "Minecraft is a sandbox adventure game that lets players explore, build, and survive in randomly generated worlds.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "10",
+    "title": "League of Legends",
+    "coverPhoto": "https://i.ibb.co.com/fVF719NV/2054b617ac11f24e23d62e05f85303d4.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "League of Legends is a competitive MOBA where two teams of five champions battle to destroy each other's base.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "11",
+    "title": "Among Us",
+    "coverPhoto": "https://i.ibb.co.com/7JfC2Ghv/1e971b6729fc3ca88bc8f7968100b163.jpg",
+    "category": "Party / Social Deduction",
+    "downloadLink": "https://innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a multiplayer game where players work together to complete tasks while impostors try to sabotage and eliminate them.",
+    "ratings": "4.2",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "12",
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "coverPhoto": "https://i.ibb.co.com/dsXtPFX3/f26f55bee2b9f92ebcd9042a038e267d.jpg",
+    "category": "Adventure / Action",
+    "downloadLink": "https://www.zelda.com/tears-of-the-kingdom/",
+    "description": "Tears of the Kingdom expands on the open-world adventure formula with new mechanics, puzzles, and epic storytelling.",
+    "ratings": "4.9",
+    "developer": "Nintendo"
+  }
+]
