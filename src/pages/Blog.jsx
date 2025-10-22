@@ -6,7 +6,7 @@ import BlogCard from '../componets/BlogCard';
 
 const Blog = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
     return (
         <div className='bg-blue-950'>
             <Navbar></Navbar>

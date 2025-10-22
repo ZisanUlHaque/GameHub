@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Discover = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="bg-black">
