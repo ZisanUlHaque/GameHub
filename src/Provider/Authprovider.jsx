@@ -9,6 +9,7 @@ import {
   signOut,
   GoogleAuthProvider,
   signInWithPopup,
+  updateProfile,
 } from "firebase/auth";
 
 const auth = getAuth(app);
@@ -42,6 +43,23 @@ const Authprovider = ({ children }) => {
     return signOut(auth);
   };
 
+   // ✅ update user info
+  const updateUserInfo = (name, photo) => {
+    if (auth.currentUser) {
+      return updateProfile(auth.currentUser, {
+        displayName: name,
+        photoURL: photo,
+      }).then(() => {
+        // Update context after Firebase updates
+        setUser({
+          ...auth.currentUser,
+          displayName: name,
+          photoURL: photo,
+        });
+      });
+    }
+  };
+
   // track auth state
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -61,6 +79,7 @@ const Authprovider = ({ children }) => {
     googleSignIn,
     loading,
     setLoading,
+    updateUserInfo,
   };
 
   return <AuthContext value={authData}>{children}</AuthContext>;

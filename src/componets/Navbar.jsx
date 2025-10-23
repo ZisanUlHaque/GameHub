@@ -139,7 +139,7 @@ const Navbar = () => {
               <button className="btn btn-outline btn-success">Login</button>
             </Link>
             <Link to="/auth/register">
-              <button className="btn btn-outline btn-success">Register</button>
+              <button className="btn btn-outline btn-primary">Register</button>
             </Link>
           </>
         )}
