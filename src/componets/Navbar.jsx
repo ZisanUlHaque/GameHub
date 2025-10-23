@@ -4,19 +4,19 @@ import { Link } from "react-router";
 import userIcon from "../assets/image.png";
 import { use } from "react";
 import { AuthContext } from "../Provider/Authprovider";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
-
   const location = useLocation();
 
   const handleLogout = () => {
     logOut()
       .then(() => {
-        alert('logout successfully')
+        toast.warning("Logout successful!");
       })
       .catch((error) => {
-        alert(error)
+        alert(error);
       });
   };
 
@@ -57,6 +57,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-[#001931] shadow-sm mb-5">
+      {/* Left side */}
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -79,10 +80,11 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <ul className="menu menu-sm dropdown-content bg-black rounded-box z-10 mt-3 w-52 p-2 shadow">
             {Links}
           </ul>
         </div>
+
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="w-10 h-10" />
           <h3 className="ml-2 text-2xl font-semibold text-[hsl(200,80%,50%)]">
@@ -90,24 +92,56 @@ const Navbar = () => {
           </h3>
         </Link>
       </div>
+
+      {/* Center links */}
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-4 font-medium text-white">{Links}</ul>
       </div>
-      <div className="navbar-end gap-1 lg:gap-3">
-        <Link to="/auth/profile">
-          <img src={userIcon} alt="" />
-        </Link>
+
+      {/* Right side */}
+      <div className="navbar-end gap-3">
         {user ? (
-          <button
-            onClick={handleLogout}
-            className="btn btn-outline btn-success"
-          >
-            Logout
-          </button>
+          <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full border-2 border-amber-400">
+                <img
+                  src={user.photoURL ? user.photoURL : userIcon}
+                  alt="User"
+                  title={user.displayName || "Profile"}
+                />
+              </div>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-[#001931] rounded-box w-52"
+            >
+              <li>
+                <Link
+                  to="/auth/profile"
+                  className="text-white hover:text-amber-400"
+                >
+                  My Profile
+                </Link>
+              </li>
+              <li>
+                <button
+                  onClick={handleLogout}
+                  className="text-red-400 hover:text-red-500"
+                >
+                  Logout
+                </button>
+              </li>
+            </ul>
+          </div>
         ) : (
-          <Link to="/auth/login">
-            <button className="btn btn-outline btn-success">Login</button>
-          </Link>
+          <>
+            <Link to="/auth/login">
+              <button className="btn btn-outline btn-success">Login</button>
+            </Link>
+            <Link to="/auth/register">
+              <button className="btn btn-outline btn-success">Register</button>
+            </Link>
+          </>
         )}
       </div>
     </div>

@@ -1,9 +1,13 @@
-import { use } from "react";
-import { Link } from "react-router";
+import { use, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/Authprovider";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser ,setUser} = use(AuthContext);
+  const [nameError,setnameError] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -11,6 +15,12 @@ const Register = () => {
 
     const form = event.target;
     const name = form.name.value;
+    if(name.length < 5){
+      setnameError("Name should be 5 character");
+      return;
+    }else{
+      setnameError("");
+    }
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
@@ -20,6 +30,8 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
        setUser(user);
+       toast.success("Register successful!");
+       navigate(location.state = '/')
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -44,14 +56,18 @@ const Register = () => {
               name="name"
               className="input"
               placeholder="Your name"
+              required
             />
-
+            {
+              nameError && <p className="text-xs text-red-700">{nameError}</p>
+            }
             <label className="font-semibold">Photo URL</label>
             <input
               type="text"
               name="photo"
               className="input"
               placeholder="Photo URL"
+              required
             />
 
             <label className="font-semibold">Email</label>
@@ -60,6 +76,7 @@ const Register = () => {
               name="email"
               className="input"
               placeholder="Email"
+              required
             />
 
             <label className="font-semibold">Password</label>
@@ -68,6 +85,7 @@ const Register = () => {
               name="password"
               className="input"
               placeholder="Password"
+              required
             />
 
             <div>

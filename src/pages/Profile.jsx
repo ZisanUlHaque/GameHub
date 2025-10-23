@@ -21,7 +21,6 @@ const Profile = () => {
       />
         <div>
           {user && user.email}
-          {user && user.name}
         </div>
       <button
         onClick={handleUpdateClick}
