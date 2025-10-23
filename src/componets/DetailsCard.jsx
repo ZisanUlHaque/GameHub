@@ -63,7 +63,7 @@ const DetailsCard = ({ details }) => {
             whileTap={{ scale: 0.95 }}
             onClick={() => window.open(downloadLink, "_blank")}
           >
-            Download Now <Download className="w-5 h-5" />
+            Download Now : <Download className="w-5 h-5" />
           </motion.button>
 
           <motion.button

@@ -1,9 +1,14 @@
 import { useLocation } from "react-router";
 import logo from "../assets/logo.png";
 import { Link } from "react-router";
-import user from '../assets/image.png'
+import userIcon from '../assets/image.png'
+
 
 const Navbar = () => {
+
+
+
+
   const location = useLocation();
 
   const Links = (
@@ -63,7 +68,7 @@ const Navbar = () => {
         <ul className="flex gap-4 font-medium text-white">{Links}</ul>
       </div>
       <div className="navbar-end gap-1 lg:gap-3">
-        <img src={user} alt="" />
+        <Link to='/auth/profile'><img src={userIcon} alt="" /></Link>
         <Link to='/auth/login'><button className="btn btn-outline btn-success">Login</button></Link>
       </div>
     </div>
