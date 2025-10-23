@@ -14,7 +14,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user)
+        // console.log(user)
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -22,7 +22,7 @@ const Login = () => {
         alert(errorCode, errorMessage);
       });
 
-    console.log({ email, password });
+    // console.log({ email, password });
   };
 
   return (

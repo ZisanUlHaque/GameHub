@@ -8,7 +8,7 @@ const UpdateProfile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Updated Info:", { name, photo });
+    // console.log("Updated Info:", { name, photo });
     // You could save to Firebase or local storage here
 
     navigate("/auth/profile");

@@ -10,8 +10,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import UpdateProfile from "../pages/UpdateProfile";
-
-
+import PrivateRoute from "../Provider/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -19,53 +18,57 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <PopularGames></PopularGames>,
         loader: () => fetch("/games.json"),
-      }
-    ]
+      },
+    ],
   },
   {
-    path: '/auth',
+    path: "/auth",
     element: <AuthLayout></AuthLayout>,
-    children:[
+    children: [
       {
         path: "/auth/login",
         element: <Login></Login>,
       },
       {
-        path: '/auth/register',
-        element: <Register></Register>
+        path: "/auth/register",
+        element: <Register></Register>,
       },
       {
-        path: '/auth/profile',
-        element: <Profile></Profile>
+        path: "/auth/profile",
+        element: <Profile></Profile>,
       },
       {
-        path: '/auth/update-profile',
-        element: <UpdateProfile></UpdateProfile>
-      }
+        path: "/auth/update-profile",
+        element: <UpdateProfile></UpdateProfile>,
+      },
     ],
   },
   {
-    path: '/details/:id',
-    element: <Details></Details>,
-    loader: () => fetch("/games.json")
+    path: "/details/:id",
+    element: (
+      <PrivateRoute>
+        <Details></Details>
+      </PrivateRoute>
+    ),
+    loader: () => fetch("/games.json"),
   },
   {
-    path:'/discover',
+    path: "/discover",
     element: <Discover></Discover>,
     loader: () => fetch("/games.json"),
   },
   {
-    path: '/*',
-    element: <Error></Error>
+    path: "/*",
+    element: <Error></Error>,
   },
   {
-    path: '/blog',
+    path: "/blog",
     loader: () => fetch("/blog.json"),
-    element: <Blog></Blog>
-  }
+    element: <Blog></Blog>,
+  },
 ]);
 
-export default router
+export default router;
