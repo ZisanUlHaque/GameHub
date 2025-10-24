@@ -10,6 +10,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   updateProfile,
+  sendPasswordResetEmail, // ✅ import this
 } from "firebase/auth";
 
 const auth = getAuth(app);
@@ -43,14 +44,13 @@ const Authprovider = ({ children }) => {
     return signOut(auth);
   };
 
-   // ✅ update user info
+  // ✅ update user info
   const updateUserInfo = (name, photo) => {
     if (auth.currentUser) {
       return updateProfile(auth.currentUser, {
         displayName: name,
         photoURL: photo,
       }).then(() => {
-        // Update context after Firebase updates
         setUser({
           ...auth.currentUser,
           displayName: name,
@@ -58,6 +58,12 @@ const Authprovider = ({ children }) => {
         });
       });
     }
+  };
+
+  // ✅ forget password function
+  const resetPassword = (email) => {
+    setLoading(true);
+    return sendPasswordResetEmail(auth, email);
   };
 
   // track auth state
@@ -80,9 +86,10 @@ const Authprovider = ({ children }) => {
     loading,
     setLoading,
     updateUserInfo,
+    resetPassword, // ✅ expose this
   };
 
-  return <AuthContext value={authData}>{children}</AuthContext>;
+  return <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>;
 };
 
 export default Authprovider;

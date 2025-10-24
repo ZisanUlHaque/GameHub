@@ -65,7 +65,7 @@ const Login = () => {
               required
             />
             <div>
-              <a className="link link-hover">Forgot password?</a>
+              <Link to='/auth/forget-password'><a className="link link-hover">Forgot password?</a></Link>
             </div>
             {error && <p className="text-red-600 text-xs">{error}</p>}
 
